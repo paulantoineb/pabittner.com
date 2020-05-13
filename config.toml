@@ -1,0 +1,64 @@
+baseURL = "https://pabittner.com"
+title = "Paul-Antoine Bittner"
+theme = "hugo-coder-pabittner"
+languageCode = "en"
+defaultcontentlanguage = "en"
+
+paginate = 20
+canonifyurls = true
+
+pygmentsstyle = "colorful"
+pygmentscodefences = true
+pygmentscodefencesguesssyntax = true
+
+googleAnalytics = "UA-165913351-1"
+#disqusShortname = "" # TODO
+
+
+[markup]
+  [markup.highlight]
+    style = "native"
+
+[permalinks]
+  posts = "/:filename/"
+
+[params]
+    author = "Paul-Antoine Bittner"
+    info = "Software engineer"
+    description = "My ideas and learnings about making software and other things I enjoy"
+    keywords = "blog,software,engineer,personal"
+    avatarurl = "images/avatar.jpg"
+
+    favicon_32 = "/images/favicon/favicon-32.png"
+    favicon_16 = "/images/favicon/favicon-16.png"
+
+    hidecredits = false
+    hidecopyright = false
+
+    rtl = false
+
+    colorscheme = "auto"
+
+    commentoUrl = "https://commento.pabittner.com/"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fab fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/paulantoineb/"
+[[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-linkedin"
+    weight = 2
+    url = "https://www.linkedin.com/in/pabittner/"
+
+# Menu links
+[[menu.main]]
+  name = "Blog"
+  weight = 1
+  url  = "/posts/"
+[[menu.main]]
+  name = "About"
+  weight = 2
+  url = "/about/"
